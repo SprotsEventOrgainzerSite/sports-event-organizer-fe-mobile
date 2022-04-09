@@ -2,30 +2,113 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #c8d8e4;
+  overflow: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_box{
+  text-align: center;
+  padding-top: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input_bar{
+  padding: 10px;
+}
+
+.input_element{
+  border: solid #2b6777;
+  border-width: 2px;
+  border-radius: 5px;
+  width: 70%;
+  height: 20px;
+}
+
+.label_text{
+ color: #2b6777;
+ font-size: larger;
+}
+
+.login_widget{
+  background-color: #ffffff;
+  height: 500px;
+  width: 25%;
+  top: 23%;
+  right: 20%;
+  border-radius: 10px;
+  align-self: center;
+  margin: 0px !important;
+  position: absolute;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.login_intro{
+  background-color: #2b6777;
+  height: 1200px;
+  width: 35%;
+  position: relative;
+  left: -10px !important;
+  top: -5px !important;
+}
+
+.login_title{
+  color: #ffffff;
+  left: 30% !important;
+  position: relative;
+  bottom: 6em !important;
+}
+
+.login_button{
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  width: 30%;
+  background-color: #c8d8e4;
+  border-color: #2b6777;
+  border-radius: 25px;
+  color: #2b6777;
+  opacity: 0.7;
+  transition: linear 0.1s;
+}
+
+.login_button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sport_one_img{
+  position: relative;
+  left: 12%;
+}
+
+.sport_two_img{
+  position: absolute;
+  top: 3% !important;
+  right: 5% !important;
+}
+
+table{
+  position: absolute;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.login_intro_text{
+  color: #ffffff;
+  position: relative;
+  padding: 55px !important;
+  left: 0px !important;
+  bottom: 10em;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.loginBody_title{
+  text-align: center;
+  position: relative;
 }
 
 @keyframes App-logo-spin {
