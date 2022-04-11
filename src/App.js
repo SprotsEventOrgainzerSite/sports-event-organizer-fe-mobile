@@ -3,8 +3,14 @@ import './App.css';
 import LoginBody from './LoginBody';
 import sportOne from './images/sport04.png'
 import sportTwo from './images/sport03.png'
+import { useContext } from 'react';
+import { StateContext } from './RenderHandler';
+import Register from './Register'
 
 function App() {
+
+  const [renderState, setRenderState] = useContext(StateContext)
+
   return (
       <table>
         <tr>
@@ -23,7 +29,8 @@ function App() {
               <img src={sportTwo} width = "15%" className = 'sport_two_img'></img>
             </div>
           <div className ='login_widget'>
-          <LoginBody></LoginBody>
+          {renderState[1] === 'LOGIN' && <LoginBody />}
+          {renderState[1] === 'REGISTER' && <Register />}
         </div>
           </td>
         </tr>

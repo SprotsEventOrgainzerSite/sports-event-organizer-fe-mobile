@@ -1,14 +1,18 @@
 import { useState } from "react";
+import React from "react";
 import App from "./App.js"
 
+export const StateContext = React.createContext();
 
 function RenderHandler()
 {
-    const[isLoggedIn,setLogin] = useState(false);
+    const[renderState,setRenderState] = useState(['LOGIN','LOGIN']);
 
     return(
         <div>
-            {!isLoggedIn && <App></App> }
+            <StateContext.Provider value={[renderState, setRenderState]}>
+            {renderState[0] === 'LOGIN'&& <App></App> }
+            </StateContext.Provider>
         </div>
     )
 }

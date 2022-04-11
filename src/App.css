@@ -12,7 +12,9 @@ body{
   text-align: center;
   padding-top: 50px;
 }
-
+.input_box_register{
+  text-align: center;
+}
 .input_bar{
   padding: 10px;
 }
