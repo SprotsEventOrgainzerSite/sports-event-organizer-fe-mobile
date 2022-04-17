@@ -90,7 +90,13 @@ body{
   right: 5% !important;
 }
 
-table{
+.running_img{
+  overflow: visible;
+  position: absolute;
+  top: 70%;
+}
+
+.LoginTable{
   position: absolute;
   height: 100% !important;
   width: 100% !important;
@@ -111,6 +117,65 @@ table{
 .loginBody_title{
   text-align: center;
   position: relative;
+}
+
+.MenuBar{
+  background-color: #2b6777;
+  height: 60px;
+  color: white;
+  display: grid;
+}
+
+.MainMenuItem{
+  position: relative;
+  font-size: 27px;
+  font-kerning: normal;
+  transition: linear 0.2s;
+  width: 11%;
+  left: 40px !important;
+}
+
+.MainMenuItem:hover{
+ cursor: pointer;
+ text-decoration: underline;
+}
+
+.newsFeed{
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  left: 15%;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.elementBody{
+  margin: 2%;
+  padding: 2%;
+  background-color: #888888;
+  border: #2b6777 solid;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.elementImage{
+  text-align: right;
+  
+}
+
+.elementText{
+  display: block;
+  position: relative;
+  top:5%;
+}
+
+.elementText > h3 {
+  margin-top: 0px !important;
+}
+
+.elementImageBody{
+  border: #2b6777 solid;
+  border-radius: 10px;
 }
 
 @keyframes App-logo-spin {

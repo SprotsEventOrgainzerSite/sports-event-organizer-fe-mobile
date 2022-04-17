@@ -12,7 +12,7 @@ function App() {
   const [renderState, setRenderState] = useContext(StateContext)
 
   return (
-      <table>
+      <table className='LoginTable'>
         <tr>
           <td className='login_intro'>
           <div>

@@ -21,6 +21,11 @@ function LoginBody()
         setRenderState(['LOGIN', 'REGISTER']);
     }
 
+    const handleLogin = () =>
+    {
+        setRenderState(['MENU','MAIN'])
+    }
+
     return(
         <div>
             <h2 className='loginBody_title'> Login or Register</h2>
@@ -32,7 +37,7 @@ function LoginBody()
                 <label className='label_text'> Password                    
                     <div className='input_bar'><input  className='input_element' ref={passwdRef} type= "password"></input></div>
                 </label>
-                <button className='login_button'><strong>Login</strong></button>
+                <button onClick={handleLogin} className='login_button'><strong>Login</strong></button>
                 </form>
                 <div><p>Don't have an account yet? Register!</p></div>
                 <button onClick={handleRegister} className='login_button'><strong>Register</strong></button>
