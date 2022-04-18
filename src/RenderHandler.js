@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import App from "./App.js";
 import MainMenu from "./MainMenu.js";
@@ -9,6 +9,19 @@ export const StateContext = React.createContext();
 function RenderHandler()
 {
     const[renderState,setRenderState] = useState(['LOGIN','LOGIN']);
+    const body = document.querySelector('body');
+
+    useEffect(()=>
+    {
+        if(renderState[0] === 'LOGIN')
+        {
+            body.style.overflow = 'hidden'
+        }
+        else
+        {
+            body.style.overflow = 'visible'
+        }
+    },[renderState])
 
     return(
         <div>

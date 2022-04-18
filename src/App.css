@@ -4,7 +4,6 @@
 
 body{
   background-color: #c8d8e4;
-  overflow: hidden;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
@@ -119,6 +118,9 @@ body{
   position: relative;
 }
 
+.MenuHeader{
+  padding-left: 4%;
+}
 .MenuBar{
   background-color: #2b6777;
   height: 60px;
@@ -141,7 +143,8 @@ body{
 }
 
 .newsFeed{
-  position: absolute;
+  position: relative;
+  padding-bottom: 20px;
   height: 100%;
   width: 70%;
   background-color: white;
@@ -177,6 +180,93 @@ body{
   border: #2b6777 solid;
   border-radius: 10px;
 }
+.news-elements{
+  position: relative;
+  top: 5% !important;
+}
+
+.slider{
+  position: relative;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #888888;
+}
+
+.slider-image{
+  width: 600px;
+  height: 350px;
+  border: #2b6777 solid;
+  border-radius: 10px;
+}
+
+.right-arrow{
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  right: 32px;
+  color:#2b6777;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow{
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  left: 32px;
+  color:#2b6777;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide{
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.slide.active{
+  opacity: 1;
+  transition-duration: 0.3s;
+  transform: scale(1.08);
+}
+
+.slide-text{
+position: absolute;
+top: -5%;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+text-align: center;
+padding-top: 6px;
+background-color: #2b6777;
+width: 100%;
+height: 10%;
+color: white;
+}
+
+.news-title{
+  background-color: #2b6777;
+  color: white;
+  padding: 20px;
+  position: relative;
+  top: -20px !important;
+}
+
+.slider-title{
+  position: absolute;
+  left: 0%;
+  top: 0px;
+  background-color: #2b6777;
+  color: white;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 0px !important;
+}
+
 
 @keyframes App-logo-spin {
   from {
