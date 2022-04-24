@@ -3,6 +3,7 @@ import React from "react";
 import App from "./App.js";
 import MainMenu from "./MainMenu.js";
 import NewsFeed from "./NewsFeed.js";
+import Events from "./Events.js";
 
 export const StateContext = React.createContext();
 
@@ -29,6 +30,7 @@ function RenderHandler()
             {renderState[0] === 'LOGIN'&& <App></App> }
             {renderState[0] === 'MENU' && <MainMenu></MainMenu>}
             {renderState[1] === 'MAIN' && <NewsFeed></NewsFeed>}
+            {renderState[1] === 'EVENTS' && <Events></Events>}
             </StateContext.Provider>
         </div>
     )

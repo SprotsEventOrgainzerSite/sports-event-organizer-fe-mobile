@@ -11,6 +11,14 @@ function MainMenu()
     const handleLogout = () =>{
         setRenderState(['LOGIN', 'LOGIN'])
     }
+
+    const handleEvents = () =>{
+        setRenderState(['MENU','EVENTS'])
+    }
+
+    const handleNewsfeed = () =>{
+        setRenderState(['MENU','MAIN'])
+    }
     
     return(
         <div>
@@ -18,8 +26,8 @@ function MainMenu()
             <div className='MenuBar'>
                 <table>
                     <tr>
-                        <td ><div className='MainMenuItem'>Newsfeed</div></td>
-                        <td ><div className='MainMenuItem'>Events</div></td>
+                        <td ><div className='MainMenuItem' onClick={handleNewsfeed}>Newsfeed</div></td>
+                        <td ><div className='MainMenuItem' onClick={handleEvents}>Events</div></td>
                         <td ><div className='MainMenuItem'>Profile</div></td>
                         <td ><div className='MainMenuItem' onClick={handleLogout}>Logout</div></td>
                     </tr>

@@ -24,8 +24,7 @@ function Slider()
     }
 
     return(
-        <section className="slider">
-        <h2 className="slider-title">Featured</h2>
+        <section className="slider">    
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
         {sliderData.map((slide, index) => {
