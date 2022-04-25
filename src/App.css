@@ -339,3 +339,35 @@ color: white;
   top: 5%;
 }
 
+.profileBody{
+  position: relative;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 28%;
+  background-color: white;
+  left: 2%;
+  box-shadow: 5px 10px 8px #999999;
+  margin-bottom: 3%;
+  border-radius: 15px;
+}
+
+.profile-title{
+  background-color: #2b6777;
+  color: white;
+  padding: 20px;
+  position: relative;
+  margin-top: 30%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.profileTable{
+  text-align: left;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.dataColumn{
+  text-align: right;
+}
+

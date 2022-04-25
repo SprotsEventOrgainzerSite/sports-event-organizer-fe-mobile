@@ -19,6 +19,10 @@ function MainMenu()
     const handleNewsfeed = () =>{
         setRenderState(['MENU','MAIN'])
     }
+
+    const handleProfile = () =>{
+        setRenderState(['MENU', 'PROFILE'])
+    }
     
     return(
         <div>
@@ -28,7 +32,7 @@ function MainMenu()
                     <tr>
                         <td ><div className='MainMenuItem' onClick={handleNewsfeed}>Newsfeed</div></td>
                         <td ><div className='MainMenuItem' onClick={handleEvents}>Events</div></td>
-                        <td ><div className='MainMenuItem'>Profile</div></td>
+                        <td ><div className='MainMenuItem' onClick={handleProfile}>Profile</div></td>
                         <td ><div className='MainMenuItem' onClick={handleLogout}>Logout</div></td>
                     </tr>
                 </table>

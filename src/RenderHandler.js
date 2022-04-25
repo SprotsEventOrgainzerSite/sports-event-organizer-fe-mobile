@@ -4,6 +4,7 @@ import App from "./App.js";
 import MainMenu from "./MainMenu.js";
 import NewsFeed from "./NewsFeed.js";
 import Events from "./Events.js";
+import Profile from "./Profile.js";
 
 export const StateContext = React.createContext();
 
@@ -31,6 +32,7 @@ function RenderHandler()
             {renderState[0] === 'MENU' && <MainMenu></MainMenu>}
             {renderState[1] === 'MAIN' && <NewsFeed></NewsFeed>}
             {renderState[1] === 'EVENTS' && <Events></Events>}
+            {renderState[1] === 'PROFILE' && <Profile></Profile>}
             </StateContext.Provider>
         </div>
     )
