@@ -343,7 +343,7 @@ color: white;
   position: relative;
   padding-bottom: 20px;
   height: 100%;
-  width: 28%;
+  width: 40%;
   background-color: white;
   left: 2%;
   box-shadow: 5px 10px 8px #999999;
@@ -356,7 +356,7 @@ color: white;
   color: white;
   padding: 20px;
   position: relative;
-  margin-top: 30%;
+  margin-top: 0%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -371,3 +371,38 @@ color: white;
   text-align: right;
 }
 
+.achivementsBody{
+  position: relative;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  left: 2%;
+  box-shadow: 5px 10px 8px #999999;
+  margin-bottom: 3%;
+  border-radius: 15px;
+}
+
+.achivements-title{
+  background-color: #2b6777;
+  color: white;
+  padding: 20px;
+  position: relative;
+  margin-top: 7%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.achivementsTable{
+  text-align: left;
+  width: 90%;
+  padding-left: 5%;
+}
+
+.profileComponentTable{
+  width: 90%;
+}
+
+.userProfileData{
+  width: 35%;
+}

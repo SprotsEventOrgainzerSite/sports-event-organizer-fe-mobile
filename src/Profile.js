@@ -5,7 +5,10 @@ function Profile()
 {
     return(
         <div>
-            <div className="profileBody">  
+           <table className='profileComponentTable'>
+               <tr>
+               <td className='userProfileData'>
+               <div className="profileBody">  
              <h2 className="profile-title">Profile</h2>
              <table className='profileTable'>
                  <tr>
@@ -34,6 +37,21 @@ function Profile()
                  </tr>
             </table>            
            </div>
+               </td>
+                <td>
+                <div className="achivementsBody">  
+             <h2 className="achivements-title">Achivements</h2>
+             <table className='achivementsTable'>
+            </table>            
+           </div>
+           <div className="achivementsBody">  
+             <h2 className="achivements-title">Events registered</h2>
+             <table className='achivementsTable'>
+            </table>            
+           </div>
+                </td>
+               </tr>
+           </table>
         </div>
     )
 }
