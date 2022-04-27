@@ -31,17 +31,34 @@ body{
  font-size: larger;
 }
 
+.login_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .login_widget{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 10px 8px #888888;
+
+
+  /*
+  vertical-align: center;
   background-color: #ffffff;
   height: 500px;
   width: 25%;
-  top: 23%;
-  right: 20%;
-  border-radius: 10px;
+  top: 25%;
+  bottom: auto;
+  left: 10%;
+  right: 10%;
   align-self: center;
   margin: 0px !important;
   position: absolute;
   box-shadow: 5px 10px 8px #888888;
+  */
 }
 
 .login_intro{
