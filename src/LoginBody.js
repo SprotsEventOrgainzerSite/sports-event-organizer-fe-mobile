@@ -23,6 +23,24 @@ function LoginBody()
 
     const handleLogin = () =>
     {
+        /*const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username: loginRef, password: passwdRef })
+        }
+        fetch('https://sample/api/posts', requestOptions)
+        .then(response => response.json())
+        .then(data =>
+            {
+                if(data)
+                {
+                    setRenderState(['MENU','MAIN'])
+                }
+                else{
+                    alert("Incorrect username or password!")
+                }
+            });*/
+
         setRenderState(['MENU','MAIN'])
     }
 

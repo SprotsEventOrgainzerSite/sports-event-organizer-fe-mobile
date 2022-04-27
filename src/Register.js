@@ -14,6 +14,25 @@ function Register()
 
     const Submit = (e) =>
     {
+         /*const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username: loginRef, password: passwdRef, email: emailRef, passwordagain: passwdAgainRef})
+        }
+        fetch('https://sample/api/posts', requestOptions)
+        .then(response => response.json())
+        .then(data =>
+            {
+                if(data)
+                {
+                    setRenderState(['MENU','MAIN'])
+                }
+                else{
+                    alert("Please choose diffrent credentials!")
+                }
+            });*/
+
+            setRenderState(['MENU','MAIN'])
         e.preventDefault();
     }
 
