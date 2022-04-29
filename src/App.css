@@ -209,6 +209,18 @@ body{
   border-radius: 15px;
 }
 
+.eventsFeed {
+  position: relative;
+  padding-bottom: 20px;
+  height: 100%;
+  width: 70%;
+  background-color: #888888;
+  left: 15%;
+  box-shadow: 5px 10px 8px #999999;
+  margin-bottom: 3%;
+  border-radius: 15px;
+}
+
 .elementBody{
   margin: 2%;
   padding: 2%;
