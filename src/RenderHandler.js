@@ -5,7 +5,8 @@ import MainMenu from "./MainMenu.js";
 import NewsFeed from "./NewsFeed.js";
 import Events from "./Events.js";
 import Profile from "./Profile.js";
-import MenuImg from "./images/menu.png"
+import MenuDown from "./images/menuDown.png"
+import MenuUp from "./images/menuUp.png"
 
 export const StateContext = React.createContext();
 
@@ -31,10 +32,24 @@ function RenderHandler()
     }
 
     return(
-        <div>
+        <div> 
             <StateContext.Provider value={[renderState, setRenderState]}>
             {renderState[0] === 'LOGIN'&& <App></App> }
-            {(renderState[0] === 'MENU' && !menuIsRendered) && <img onClick={handlMenuRender} src = {MenuImg}></img>}
+            { /*{renderState[0] === 'MENU' && <div className='MenuHeader'><h1>SPORTS EVENT HANDLER</h1></div>} */ }
+            {(renderState[0] === 'MENU' && !menuIsRendered) &&
+            <div className='MenuHeader'>
+                <h1> <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img> SPORTS EVENT HANDLER</h1>
+            </div>}
+
+            {(renderState[0] === 'MENU' && menuIsRendered) &&
+            <div className='MenuHeader'>
+                <h1> <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img> SPORTS EVENT HANDLER</h1>
+            </div>}
+            { /*
+            {(renderState[0] === 'MENU' && !menuIsRendered) && <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img>}
+            {(renderState[0] === 'MENU' && menuIsRendered) && <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img>}
+            */ }
+
             {(renderState[0] === 'MENU' && menuIsRendered) && <MainMenu></MainMenu>}
             {renderState[1] === 'MAIN' && <NewsFeed></NewsFeed>}
             {renderState[1] === 'EVENTS' && <Events></Events>}

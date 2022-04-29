@@ -143,28 +143,44 @@ body{
 }
 
 .MenuHeader{
+  /*
+  min-width: fit-content;
+  max-width: 100%;
+  width: auto;
+  */
+  max-width: 100%;
+  align-self: center;
   padding-left: 4%;
   background-color: #888888;
   padding: 1%;
 }
 
 .MenuHeader > h1{
+  width: auto;
+  max-width: 70%;
+  font-size: 50px;
   margin: 0px !important;
 }
+
 .MenuBar{
+  width: 100%;
   background-color: #2b6777;
   height: 60px;
   color: white;
   display: grid;
 }
+.MenuIcon{
+  height: 40px;
+}
 
 .MainMenuItem{
   position: relative;
-  font-size: 27px;
+  font-size: auto;
   font-kerning: normal;
   transition: linear 0.2s;
-  width: 11%;
-  left: 40px !important;
+  width: 30%;
+  left: 60px !important;
+  right: 10px;
 }
 
 .MainMenuItem:hover{

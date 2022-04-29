@@ -2,13 +2,12 @@ import { useContext } from 'react';
 import './App.css';
 import runningIcon from './images/runningIcon.png'
 import { StateContext } from './RenderHandler';
+import MenuUp from "./images/menuUp.png"
 
 function MainMenu()
 {
-
     const[renderState,setRenderState] = useContext(StateContext)
 
-    
     const handleLogout = () =>{
         setRenderState(['LOGIN', 'LOGIN'])
     }
@@ -24,10 +23,9 @@ function MainMenu()
     const handleProfile = () =>{
         setRenderState(['MENU', 'PROFILE'])
     }
-    
+
     return(
         <div>
-            <div className='MenuHeader'><h1>SPORTS EVENT HANDLER</h1></div>
             <div className='MenuBar'>
                 <table>
                     <tr>
