@@ -1,7 +1,7 @@
 import './App.css';
 import { useContext, useRef, useState } from 'react';
 import { StateContext } from './RenderHandler';
-
+import sportFour from './images/sport04.png'
 
 function Register()
 {
@@ -45,6 +45,7 @@ function Register()
         <div>
             <h2 className='loginBody_title'> Registration</h2>
             <div className='input_box_register'>
+            <img src={sportFour} className = 'login_img'></img>
                 <form onSubmit={Submit}>
                 <label className='label_text'> User Name                    
                     <div className='input_bar'><input className='input_element' ref={loginRef} type= "text"></input></div>

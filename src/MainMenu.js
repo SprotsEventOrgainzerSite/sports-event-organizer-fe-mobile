@@ -8,6 +8,7 @@ function MainMenu()
 
     const[renderState,setRenderState] = useContext(StateContext)
 
+    
     const handleLogout = () =>{
         setRenderState(['LOGIN', 'LOGIN'])
     }
