@@ -36,14 +36,17 @@ function RenderHandler()
             <StateContext.Provider value={[renderState, setRenderState]}>
             {renderState[0] === 'LOGIN'&& <App></App> }
             { /*{renderState[0] === 'MENU' && <div className='MenuHeader'><h1>SPORTS EVENT HANDLER</h1></div>} */ }
+
+
             {(renderState[0] === 'MENU' && !menuIsRendered) &&
             <div className='MenuHeader'>
-                <h1> <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img> SPORTS EVENT HANDLER</h1>
+                <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img> 
+                <h1> SPORTS EVENT HANDLER</h1>
             </div>}
-
             {(renderState[0] === 'MENU' && menuIsRendered) &&
             <div className='MenuHeader'>
-                <h1> <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img> SPORTS EVENT HANDLER</h1>
+                <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img>
+                <h1> SPORTS EVENT HANDLER</h1>
             </div>}
             { /*
             {(renderState[0] === 'MENU' && !menuIsRendered) && <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img>}
