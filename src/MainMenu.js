@@ -27,13 +27,19 @@ function MainMenu()
     return(
         <div>
             <div className='MenuBar'>
-                <table>
+            <table>
                     <tr>
                         <td ><div className='MainMenuItem' onClick={handleNewsfeed}>Newsfeed</div></td>
-                        <td ><div className='MainMenuItem' onClick={handleEvents}>Events</div></td>
-                        <td ><div className='MainMenuItem' onClick={handleProfile}>Profile</div></td>
-                        <td ><div className='MainMenuItem' onClick={handleLogout}>Logout</div></td>
                     </tr>
+                    <tr>
+                        <td ><div className='MainMenuItem' onClick={handleEvents}>Events</div></td>
+                    </tr>
+                    <tr>
+                        <td ><div className='MainMenuItem' onClick={handleProfile}>Profile</div></td>
+                    </tr>
+                    <tr>
+                        <td ><div className='MainMenuItem' onClick={handleLogout}>Logout</div></td>
+                    </tr> 
                 </table>
                 
             </div>
