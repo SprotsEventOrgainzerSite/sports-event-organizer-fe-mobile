@@ -7,6 +7,7 @@ import Events from "./Events.js";
 import Profile from "./Profile.js";
 import MenuDown from "./images/menuDown.png"
 import MenuUp from "./images/menuUp.png"
+import SportFour from './images/sport04.png'
 
 export const StateContext = React.createContext();
 
@@ -39,15 +40,61 @@ function RenderHandler()
 
 
             {(renderState[0] === 'MENU' && !menuIsRendered) &&
-            <div className='MenuHeader'>
-                <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img> 
-                <h1> SPORTS EVENT HANDLER</h1>
-            </div>}
+                  <><table className='MenuHeader'>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img onClick={handlMenuRender} src={MenuDown} className='MenuIcon'></img>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h1> SPORTS EVENT HANDLER</h1>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <img src={SportFour} className='MenuIMG'></img>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </>}
+
+
+                {(renderState[0] === 'MENU' && menuIsRendered) &&
+                  <><table className='MenuHeader'>
+                        <tr>
+                            <td>
+                                <div>
+                                    <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h1> SPORTS EVENT HANDLER </h1>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <img src = {SportFour} className='MenuIMG'></img>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </>}
+
+
+            
+            {/*
             {(renderState[0] === 'MENU' && menuIsRendered) &&
             <div className='MenuHeader'>
                 <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img>
-                <h1> SPORTS EVENT HANDLER</h1>
+                <h1> SPORTS EVENT HANDLER </h1>
+                <img src = {SportFour} className='MenuIMG'></img>
             </div>}
+            */}
+
             { /*
             {(renderState[0] === 'MENU' && !menuIsRendered) && <img onClick={handlMenuRender} src = {MenuDown} className='MenuIcon' ></img>}
             {(renderState[0] === 'MENU' && menuIsRendered) && <img onClick={handlMenuRender} src = {MenuUp} className='MenuIcon' ></img>}

@@ -37,9 +37,11 @@ function MainMenu()
                 </table>
                 
             </div>
+            {/*
             <div>
               <img src={runningIcon} width = "13%" className = 'running_img'></img>
             </div>
+            */}
         </div>
     )
 }
