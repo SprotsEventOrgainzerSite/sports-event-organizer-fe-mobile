@@ -22,4 +22,5 @@ MOBIL BUILD
 - Expo Go-val leolvassuk a generált kódot, ami futtatja a mobilunkon az applikációt                                                             
                                                               
 Felhasznált anyag:
+                                                              
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/KAnREiZxPZg/0.jpg)](https://youtu.be/KAnREiZxPZg)
