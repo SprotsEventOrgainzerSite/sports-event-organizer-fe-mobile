@@ -13,5 +13,5 @@
 ## PC Browser
 
 <p align="center">
-  <img align="left" src="https://github.com/SprotsEventOrgainzerSite/sports-event-organizer-fe-mobile/blob/master/dok/photo/browser_Newsfeed.jpg" alt="" style="width:750px;"/>
+  <img src="https://github.com/SprotsEventOrgainzerSite/sports-event-organizer-fe-mobile/blob/master/dok/photo/browser_Newsfeed.jpg" alt="" style="width:750px;"/>
 </p>
