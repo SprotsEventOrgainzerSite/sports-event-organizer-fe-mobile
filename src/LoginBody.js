@@ -1,7 +1,7 @@
 import './App.css';
 import { useContext, useRef, useState } from 'react';
 import { StateContext } from './RenderHandler';
-import sportFour from './images/sport04.png'
+import SportFour from './images/sport04.png'
 
 
 function LoginBody()
@@ -49,7 +49,7 @@ function LoginBody()
         <div>
             <h2 className='loginBody_title'> Login or Register</h2>
             <div className='input_box'>
-                <img src={sportFour} className = 'login_img'></img>
+                <img src={SportFour} className = 'login_img'></img>
                 <form onSubmit={Submit}>
                 <label className='label_text'> User Name                    
                     <div className='input_bar'><input className='input_element' ref={loginRef} type= "text"></input></div>
