@@ -1,0 +1,1 @@
+# Teszt jegyzőkönyvhöz képek:
